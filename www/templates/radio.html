@@ -1,0 +1,37 @@
+<ion-view view-title="Radio" class="radio-page" align-title="center">
+  <ion-content has-header="false">
+    <!-- <sound-manager></sound-manager> -->
+
+    <div class="app-title text-center">
+      <img class="radio-icon" src="img/radio.png">
+      <br/>
+      <div class="main-title">Kasoot</div>
+      <h4>Haryanvi Radio</h4>
+
+      <a
+        music-player="play"
+        add-song="ctrl.radio"
+        ng-if="(currentPlaying.id !== ctrl.radio.id) ||
+               (!isPlaying && currentPlaying.id == ctrl.radio.id)"
+        class="button button-block button-icon icon play-pause-button ion-play">
+      </a>
+
+      <a
+        stop-music
+        ng-if="isPlaying && currentPlaying.id == ctrl.radio.id"
+        class="button button-block button-icon icon play-pause-button ion-stop">
+      </a>
+
+      <div
+        ng-if="currentPlaying.id == ctrl.radio.id">
+        {{ currentPostion }}
+      </div>
+    </div>
+
+    <div class="app-footer text-center">
+      <h4>Dedicated to <br/> Haryanvi Music Listeners</h4>
+      <h6>by Arun Malik</h6>
+    </div>
+
+  </ion-content>
+</ion-view>

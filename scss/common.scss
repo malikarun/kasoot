@@ -1,0 +1,55 @@
+.scroll {
+  height: 80vh;
+}
+
+.spinner svg {
+  width: 40px;
+  height: 40px;
+}
+
+.bar.bar-header.bar-transparent {
+  background: none;
+  border: none;
+}
+
+.pane, .view {
+  // background: #649173; /* fallback for old browsers */
+  // background: linear-gradient(to top, #649173 , #DBD5A4);
+  background: $dark;
+
+  * {
+    color: $light !important;
+  }
+}
+
+.menu-left {
+  background: $dark;
+}
+
+.list.list-transparent {
+  .item {
+    background: none;
+  }
+}
+
+.player {
+  * {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: 900;
+  }
+}
+
+.grid {
+  position: relative;
+
+  img {
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  p {
+    position: absolute;
+    bottom: 5px;
+    left: 25%;
+  }
+}

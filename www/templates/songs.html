@@ -1,0 +1,15 @@
+<ion-view view-title="Songs" align-title="center" class="songs">
+  <ion-content>
+    <div class="list list-transparent">
+      <a
+        class="item item-avatar"
+        ng-repeat="song in ctrl.songs"
+        music-player="play"
+        add-song="song">
+        <img src="http://lorempixel.com/100/100">
+        <h2>{{ song.title }}</h2>
+        <p>Song {{ song.id }}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

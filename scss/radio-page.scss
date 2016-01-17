@@ -1,0 +1,36 @@
+.radio-page {
+
+  .app-title, .app-footer {
+    position: absolute;
+    width: 100%;
+
+    * {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-weight: 900;
+    }
+  }
+
+  .app-title {
+    .main-title {
+      font-size: 36px;
+    }
+
+    .radio-icon {
+      height: 80px;
+      width: auto;
+    }
+
+    .play-pause-button {
+      padding: 10px;
+
+      &.icon:before {
+        font-size: 80px;
+        line-height: 80px;
+      }
+    }
+  }
+
+  .app-footer {
+    bottom: 0;
+  }
+}

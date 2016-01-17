@@ -1,0 +1,19 @@
+<ion-view view-title="Catagories" align-title="center" class="categories">
+  <ion-content>
+    <div
+      class="row"
+      ng-repeat="category in ctrl.categories"
+      ui-sref="app.albums({categoryId: category.id})"
+      ng-if="$index % 2 === 0">
+
+      <div class="col col-50 grid" ng-if="$index < ctrl.categories.length">
+        <img ng-src="{{ ctrl.categories[$index].src }}"/>
+        <p class="text-center">{{ ctrl.categories[$index].title }}</p>
+      </div>
+      <div class="col col-50 grid" ng-if="$index + 1 < ctrl.categories.length">
+        <img ng-src="{{ ctrl.categories[$index + 1].src }}"/>
+        <p class="text-center">{{ ctrl.categories[$index + 1].title }}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

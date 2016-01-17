@@ -1,0 +1,9 @@
+<ion-view view-title="Downloads">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="download in downloads" href="#/app/downloads/{{download.id}}">
+        {{download.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
